@@ -12,3 +12,8 @@ corr <- function(directory, treshold = 0){
     } # otherwise we do not count
  out   
 }
+
+# tu na sztywno zapisany jest format danych - do funkcji cor() liczącej korelację bierzemy kolumny 2 i 3 z rawdata, wiemy że tam są wyniki pomiarów. 
+# żeby to zrobić bardziej elegancko trzeba by poszukać kolumn po nazwach
+# uwzględnianie tresholdu - wywołujemy funkcje complete liczącą ilość kompletnych rekordów w każdym pliku
+# potem w if sprawdzamy wartość
